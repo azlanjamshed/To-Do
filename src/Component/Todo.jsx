@@ -113,6 +113,10 @@ const Todo = () => {
                   value.isChecked ? "line-through text-gray-400" : ""
                 }`}
               >
+                <span className="text-xs">
+                  {new Date().toLocaleDateString()}
+                </span>
+                <br />
                 {value.text}
               </span>
               <span className="flex gap-3">
